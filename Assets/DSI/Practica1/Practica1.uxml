@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Test.uss?fileID=7433441132597879392&amp;guid=4d642a28c5f77ba4abcc1f5f65cbc4a5&amp;type=3#Test" />
+    <ui:VisualElement name="Top" class="Test" style="flex-grow: 1; background-color: rgb(0, 166, 88); background-image: none; border-left-color: rgb(0, 55, 8); border-right-color: rgb(0, 55, 8); border-top-color: rgb(0, 55, 8); border-bottom-color: rgb(0, 55, 8); border-top-width: 10px; border-right-width: 10px; border-bottom-width: 10px; border-left-width: 10px; border-top-left-radius: 30px; border-top-right-radius: 30px; border-bottom-right-radius: 30px; border-bottom-left-radius: 30px;" />
+    <ui:VisualElement name="Mid" style="flex-grow: 1; flex-direction: row;">
+        <ui:VisualElement class="item" style="flex-grow: 1;">
+            <ui:Label tabindex="-1" text="Items" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ItemsLabel" class="label" />
+        </ui:VisualElement>
+        <ui:VisualElement class="item" style="flex-grow: 1;">
+            <ui:Label tabindex="-1" text="Spells" parse-escape-sequences="true" display-tooltip-when-elided="true" name="SpellsLabel" class="label" />
+        </ui:VisualElement>
+        <ui:VisualElement class="item" style="flex-grow: 1;">
+            <ui:Label tabindex="-1" text="Equipment" parse-escape-sequences="true" display-tooltip-when-elided="true" name="EquipmentLabel" class="label" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="Bottom" class="Test" style="flex-grow: 1;" />
+</ui:UXML>
