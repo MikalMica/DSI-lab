@@ -1,9 +1,19 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <Style src="project://database/Assets/DSI/Practica1/Practica.uss?fileID=7433441132597879392&amp;guid=bc4d497edc7e7fb468bcb52ad1048681&amp;type=3#Practica" />
+    <Style src="project://database/Assets/DSI/Practica2/Practica2.uss?fileID=7433441132597879392&amp;guid=b7643ba77ee285a48bfa8d6633f7c5de&amp;type=3#Practica2" />
     <ui:VisualElement name="Background" style="flex-grow: 1; background-color: rgb(22, 0, 22); border-left-color: rgb(82, 0, 0); border-right-color: rgb(82, 0, 0); border-top-color: rgb(82, 0, 0); border-bottom-color: rgb(82, 0, 0); border-top-width: 3px; border-right-width: 3px; border-bottom-width: 3px; border-left-width: 3px; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; flex-direction: row;">
-        <ui:VisualElement name="Left" style="flex-grow: 1;">
-            <ui:Label tabindex="-1" text="Inventory" parse-escape-sequences="true" display-tooltip-when-elided="true" class="title" />
-            <ui:VisualElement style="flex-grow: 1;" />
+        <ui:VisualElement name="Left" style="flex-grow: 1; max-width: 350px;">
+            <ui:VisualElement name="Menus" style="flex-grow: 1; max-height: 50px; flex-direction: row;">
+                <ui:VisualElement name="Inventory" style="flex-grow: 1;">
+                    <ui:Label tabindex="-1" text="Inventory" parse-escape-sequences="true" display-tooltip-when-elided="true" class="title" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Spells" style="flex-grow: 1;">
+                    <ui:Label tabindex="-1" text="Spells" parse-escape-sequences="true" display-tooltip-when-elided="true" class="title" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Options" style="flex-grow: 1;">
+                    <ui:Label tabindex="-1" text="Options" parse-escape-sequences="true" display-tooltip-when-elided="true" class="title" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="Content" style="flex-grow: 1;" />
         </ui:VisualElement>
         <ui:VisualElement name="Right" style="flex-grow: 1; max-width: 375px; flex-direction: row;">
             <ui:VisualElement name="Equipment" style="flex-grow: 1; padding-bottom: 30px; max-width: 150px;">
