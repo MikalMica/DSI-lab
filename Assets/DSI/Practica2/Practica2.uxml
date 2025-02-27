@@ -3,7 +3,7 @@
     <ui:VisualElement name="Background" style="flex-grow: 1; background-color: rgb(22, 0, 22); border-left-color: rgb(82, 0, 0); border-right-color: rgb(82, 0, 0); border-top-color: rgb(82, 0, 0); border-bottom-color: rgb(82, 0, 0); border-top-width: 3px; border-right-width: 3px; border-bottom-width: 3px; border-left-width: 3px; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; flex-direction: row; flex-shrink: 1; align-items: stretch; justify-content: space-around;">
         <ui:VisualElement name="Left" style="flex-grow: 1; max-width: none;">
             <ui:VisualElement name="Menus" style="flex-grow: 1; max-height: 50px; flex-direction: row;">
-                <ui:VisualElement name="Inventory" class="Inventory" style="flex-grow: 1; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 0; border-left-width: 2px; border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                <ui:VisualElement name="Inventory" class="Inventory selected" style="flex-grow: 1; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 0; border-left-width: 2px; border-top-left-radius: 10px; border-top-right-radius: 10px;">
                     <ui:Label tabindex="-1" text="Inventory" parse-escape-sequences="true" display-tooltip-when-elided="true" class="title" />
                 </ui:VisualElement>
                 <ui:VisualElement name="Spells" class="Inventory" style="flex-grow: 1;">
@@ -14,11 +14,29 @@
                 </ui:VisualElement>
             </ui:VisualElement>
             <ui:VisualElement name="Content" style="flex-grow: 1;">
-                <ui:VisualElement name="InvContent" style="flex-grow: 1;" />
+                <ui:VisualElement name="InvContent" class="content" style="flex-grow: 1; display: flex; flex-direction: row; flex-wrap: wrap; flex-basis: auto; justify-content: flex-start;">
+                    <ui:VisualElement name="Column1" style="flex-grow: 1;">
+                        <ui:VisualElement name="Item1" class="equipment" style="flex-grow: 1;" />
+                        <ui:VisualElement name="Item2" class="equipment" style="flex-grow: 1;" />
+                        <ui:VisualElement name="Item3" class="equipment" style="flex-grow: 1;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="Column2" style="flex-grow: 1;">
+                        <ui:VisualElement name="item4" class="equipment" style="flex-grow: 1;" />
+                        <ui:VisualElement name="item5" class="equipment" style="flex-grow: 1;" />
+                        <ui:VisualElement name="item6" class="equipment" style="flex-grow: 1;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="Column3" style="flex-grow: 1;">
+                        <ui:VisualElement name="item7" class="equipment" style="flex-grow: 1;" />
+                        <ui:VisualElement name="item8" class="equipment" style="flex-grow: 1;" />
+                        <ui:VisualElement name="item9" class="equipment" style="flex-grow: 1;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="SpellsContent" class="content" style="flex-grow: 1; display: none;" />
+                <ui:VisualElement name="OptContent" class="content" style="flex-grow: 1; display: none;" />
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="Right" style="flex-grow: 1; max-width: none; flex-direction: row;">
-            <ui:VisualElement name="Equipment" style="flex-grow: 1; padding-bottom: 30px; max-width: none;">
+            <ui:VisualElement name="Equipment" style="flex-grow: 1; padding-bottom: 30px; max-width: none; width: 32px;">
                 <ui:VisualElement name="Helmet" class="equipment" style="flex-grow: 1; -unity-text-align: upper-left; justify-content: flex-start; align-self: auto; align-items: stretch;">
                     <ui:VisualElement name="Image" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Images/Helmet.png?fileID=2800000&amp;guid=43b561b195d75d344a1c1a2191faae27&amp;type=3#Helmet&quot;); width: 100px; align-self: center;" />
                 </ui:VisualElement>
