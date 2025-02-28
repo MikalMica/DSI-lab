@@ -14,7 +14,7 @@
                 </ui:VisualElement>
             </ui:VisualElement>
             <ui:VisualElement name="Content" style="flex-grow: 1;">
-                <ui:VisualElement name="InvContent" class="content" style="flex-grow: 1; display: flex; flex-direction: row; flex-wrap: wrap; flex-basis: auto; justify-content: flex-start;">
+                <ui:VisualElement name="InvContent" class="content" style="flex-grow: 1; display: none; flex-direction: row; flex-wrap: wrap; flex-basis: auto; justify-content: flex-start;">
                     <ui:VisualElement name="Column1" style="flex-grow: 1;">
                         <ui:VisualElement name="Item1" class="equipment" style="flex-grow: 1;" />
                         <ui:VisualElement name="Item2" class="equipment" style="flex-grow: 1;" />
@@ -32,7 +32,12 @@
                     </ui:VisualElement>
                 </ui:VisualElement>
                 <ui:VisualElement name="SpellsContent" class="content" style="flex-grow: 1; display: none;" />
-                <ui:VisualElement name="OptContent" class="content" style="flex-grow: 1; display: none;" />
+                <ui:VisualElement name="OptContent" class="content" style="flex-grow: 1; display: flex; justify-content: space-between;">
+                    <ui:Slider label="Volume" high-value="100" class="text" />
+                    <ui:DropdownField label="Sound" choices="Stereo, 3D" index="-1" class="text" />
+                    <ui:DropdownField label="Resolution" choices="1980x1020,624x425" class="text" />
+                    <ui:RadioButtonGroup label="Difficulty choices" value="-1" choices="Foes hardened, Lower drop rate, More life" class="text" style="height: 233px;" />
+                </ui:VisualElement>
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="Right" style="flex-grow: 1; max-width: none; flex-direction: row;">

@@ -63,3 +63,15 @@
 .selected {
     background-color: rgb(55, 55, 55);
 }
+
+.unity-base-slider__dragger {
+    background-image: url("project://database/Assets/Images/sword.png?fileID=2800000&guid=3493b014934750d4c8048c403c383818&type=3#sword");
+    width: 40px;
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    height: 30px;
+}
