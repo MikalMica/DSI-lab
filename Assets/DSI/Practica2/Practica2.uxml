@@ -14,7 +14,7 @@
                 </ui:VisualElement>
             </ui:VisualElement>
             <ui:VisualElement name="Content" style="flex-grow: 1;">
-                <ui:VisualElement name="InvContent" class="content" style="flex-grow: 1; display: none; flex-direction: row; flex-wrap: wrap; flex-basis: auto; justify-content: flex-start;">
+                <ui:VisualElement name="InvContent" class="content" style="flex-grow: 1; display: flex; flex-direction: row; flex-wrap: wrap; flex-basis: auto; justify-content: flex-start; max-width: 100%;">
                     <ui:VisualElement name="Column1" style="flex-grow: 1;">
                         <ui:VisualElement name="Item1" class="equipment" style="flex-grow: 1;" />
                         <ui:VisualElement name="Item2" class="equipment" style="flex-grow: 1;" />
@@ -31,8 +31,21 @@
                         <ui:VisualElement name="item9" class="equipment" style="flex-grow: 1;" />
                     </ui:VisualElement>
                 </ui:VisualElement>
-                <ui:VisualElement name="SpellsContent" class="content" style="flex-grow: 1; display: none;" />
-                <ui:VisualElement name="OptContent" class="content" style="flex-grow: 1; display: flex; justify-content: space-between;">
+                <ui:VisualElement name="SpellsContent" class="content" style="flex-grow: 1; display: none; max-width: 100%;">
+                    <ui:VisualElement name="Fireball" class="equipment" style="flex-grow: 1; align-items: center; align-self: auto; flex-direction: row; justify-content: space-between;">
+                        <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Firetitle" />
+                        <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Firetxt" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="Heal" class="equipment" style="flex-grow: 1; flex-direction: row; justify-content: space-between; align-items: center;">
+                        <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Healtitle" />
+                        <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Healtxt" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="Magical_armor" class="equipment" style="flex-grow: 1; flex-direction: row; justify-content: space-between; align-items: center;">
+                        <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="MAtitle" />
+                        <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="MAtxt" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="OptContent" class="content" style="flex-grow: 1; display: none; justify-content: space-between; max-width: 100%;">
                     <ui:Slider label="Volume" high-value="100" class="text" />
                     <ui:DropdownField label="Sound" choices="Stereo, 3D" index="-1" class="text" />
                     <ui:DropdownField label="Resolution" choices="1980x1020,624x425" class="text" />

@@ -75,3 +75,8 @@
     background-color: rgba(0, 0, 0, 0);
     height: 30px;
 }
+
+.unity-radio-button__checkmark {
+    background-image: url("project://database/Assets/Images/Fire.png?fileID=2800000&guid=d426bfb5d10337e48b8f645ace4db759&type=3#Fire");
+    background-color: rgb(255, 255, 255);
+}
